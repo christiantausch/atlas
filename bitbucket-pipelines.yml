@@ -41,6 +41,7 @@ pipelines:
           - mkdir -p $BITBUCKET_CLONE_DIR/outputs
             
           - echo  $AZURE_APP_ID - 'echo "AZURE_APP_ID - $AZURE_APP_ID"'
+          - echo "AZURE_APP_ID ${AZURE_APP_ID}"
           
           # Have to use artifact file because env variables don't carry over to after-script
           - echo "BB_PIPELINE_$BITBUCKET_BUILD_NUMBER" > $BITBUCKET_CLONE_DIR/outputs/resourcegroup

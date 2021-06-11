@@ -19,7 +19,7 @@
   "homepage": "https://bitbucket.org/atlassian/atlassian-azure-deployment#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-fail": "^1.0.5",
+    "gulp-fail": "2.0.0",
     "merge": "^1.2.0",
     "run-sequence": "^2.1.0",
     "shelljs": "^0.7.8",

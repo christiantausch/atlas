@@ -18,11 +18,11 @@
   "license": "ISC",
   "homepage": "https://bitbucket.org/atlassian/atlassian-azure-deployment#readme",
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-fail": "^1.0.5",
-    "merge": "^1.2.0",
-    "run-sequence": "^2.1.0",
-    "shelljs": "^0.7.8",
-    "standard": "^11.0.1"
+    "gulp": "3.9.1",
+    "gulp-fail": "1.1.1",
+    "merge": "1.2.0",
+    "run-sequence": "2.2.1",
+    "shelljs": "0.7.8",
+    "standard": "11.0.1"
   }
 }

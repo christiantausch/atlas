@@ -53,18 +53,18 @@
             "provider": "2F0AF47A-92C7-413A-9009-C3815BFF7AF6"
         },
         "vnet": {
-            "name": "[concat(variables('namespace'), 'vnet')]",
+            "name": "vnet-bof-jira-tst",
             "prefix": "10.7.0.0/16"
         },
         "gtwySubnet": {
-            "name": "[concat(variables('namespace'), 'appgwsubnet')]",
+            "name": "snet-bof-jira-gwsubnet-tst",
             "prefix": "10.7.1.0/24"
         },
         "appSubnet": {
-            "name": "[concat(variables('namespace'), 'cluster', 'subnet')]",
+            "name": "snet-bof-jira-appsubnet-tst",
             "prefix": "10.7.2.0/24",
             "nsg": {
-                "name": "[concat(variables('namespace'), 'cluster', 'nsg')]"
+                "name": "nsg-bof-jira-appsubnet-tst"
             }
         },
         "jumpbox": {
@@ -320,15 +320,15 @@
     "outputs": {
         "vnetName": {
             "type": "string",
-            "value": "[variables('vnet').name]"
+            "value": "vnet-bof-jira-tst"
         },
         "appSubnetName": {
             "type": "string",
-            "value": "[variables('appSubnet').name]"
+            "value": "snet-bof-jira-appsubnet-tst"
         },
         "gtwySubnetName": {
             "type": "string",
-            "value": "[variables('gtwySubnet').name]"
+            "value": "snet-bof-jira-gwsubnet-tst"
         },
         "jumpboxName": {
             "type": "string",

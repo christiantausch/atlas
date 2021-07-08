@@ -99,7 +99,7 @@
     "variables": {
         "namespace": "jira",
         "applicationGateway": {
-            "name": "[parameters('gtwyName')]",
+            "name": "appgw-bof-jira-tst",
             "publicIpName": "[parameters('gtwyIpName')]",
             "frontend": {
                 "subnet": {

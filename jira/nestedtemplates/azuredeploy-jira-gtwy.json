@@ -11,12 +11,13 @@
         },
         "gtwyIpName": {
             "type": "string",
-            "metadata": {
+                       "metadata": {
                 "description": "The name of the Application Gateway's public IP."
             }
         },
         "gtwyName": {
            "type": "string",
+             "defaultValue": "appgw-bof-jira-tst",
             "metadata": {
                 "description": "The name of the Application Gateway."
             }

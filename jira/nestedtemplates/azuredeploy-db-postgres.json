@@ -7,14 +7,12 @@
     },
     "dbServerName": {
       "type": "string",
-      "defaultValue": "sql-bof-jira-name-tst",
       "metadata": {
         "description": "The database server name."
       }
     },
     "dbDatabaseName": {
       "type": "string",
-       "defaultValue": "sql-bof-jira-db-tst",
       "metadata": {
         "description": "The name of the Jira database."
       }

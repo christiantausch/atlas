@@ -62,7 +62,7 @@
         },
         "appSubnet": {
             "name": "[concat(variables('namespace'), 'cluster', 'subnet')]",
-            "prefix": "10.82.70.16/27",
+            "prefix": "10.82.70.16/28",
             "nsg": {
                 "name": "[concat(variables('namespace'), 'cluster', 'nsg')]"
             }
@@ -92,7 +92,7 @@
             },
             "subnet": {
                 "name": "[concat(variables('namespace'), 'jumpboxsubnet')]",
-                "prefix": "10.82.70.32/27"
+                "prefix": "10.82.70.32/28"
             },
             "nics": {
                 "public": "[concat(variables('namespace'), 'jumpbox', 'nic', 'public')]"

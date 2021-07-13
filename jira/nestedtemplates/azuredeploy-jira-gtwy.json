@@ -11,13 +11,12 @@
         },
         "gtwyIpName": {
             "type": "string",
-                       "metadata": {
+            "metadata": {
                 "description": "The name of the Application Gateway's public IP."
             }
         },
         "gtwyName": {
            "type": "string",
-             "defaultValue": "appgw-bof-jira-tst",
             "metadata": {
                 "description": "The name of the Application Gateway."
             }
@@ -100,7 +99,7 @@
     "variables": {
         "namespace": "jira",
         "applicationGateway": {
-            "name": "appgw-bof-jira-tst",
+            "name": "[parameters('gtwyName')]",
             "publicIpName": "[parameters('gtwyIpName')]",
             "frontend": {
                 "subnet": {
@@ -110,7 +109,7 @@
                     "name": "[concat(variables('namespace'), 'appgwfeipconfig')]",
                     "private": {
                         "name": "[concat(variables('namespace'), 'appgwfeipconfig-private')]",
-                        "address": "10.7.1.99"
+                        "address": "10.0.1.99"
                     }
                 },
                 "portConfiguration": {

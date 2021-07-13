@@ -92,7 +92,7 @@
             },
             "subnet": {
                 "name": "[concat(variables('namespace'), 'jumpboxsubnet')]",
-                "prefix": "10.82.70.65/27"
+                "prefix": "10.82.70.64/27"
             },
             "nics": {
                 "public": "[concat(variables('namespace'), 'jumpbox', 'nic', 'public')]"

@@ -505,7 +505,7 @@
             "retentionInDays": 7
         },
         "gtwyIpName": "[concat(variables('namespace'), '-appgtwyip-', uniqueString(resourceGroup().id))]",
-        "gtwyName": "appgw-bof-jira-tst",
+        "gtwyName": "[if(empty(parameters('sslBase64EncodedPfxCertificate')), concat(variables('namespace'), 'appgateway'), concat(variables('namespace'), 'appgateway-https'))]",
         "gtwyAddressPoolName": "[concat(variables('namespace'), 'appgwaddrpool')]",
         "dbTemplate": "[if(equals(parameters('dbType'),'sqlserver'), 'sqlDbTemplate', 'postgresDbTemplate')]",
         "vaultName": "[concat(variables('namespace'), '-vault-', uniqueString(resourceGroup().id))]",

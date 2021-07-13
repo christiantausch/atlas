@@ -594,7 +594,7 @@
         },
         {
             "type": "Microsoft.Compute/virtualMachineScaleSets",
-            "name": "vmss-bof-jira-tst",
+            "name": "[variables('jira').cluster.name]",
             "location": "[parameters('location')]",
             "apiVersion": "2019-12-01",
             "dependsOn": [
@@ -720,7 +720,7 @@
     "outputs": {
         "clusterName": {
             "type": "string",
-            "value": "vmss-bof-jira-tst"
+            "value": "[variables('jira').cluster.name]"
         },
         "prepareCmdArgs": {
             "type": "string",

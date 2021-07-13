@@ -50,7 +50,7 @@
     },
     "postgresDbVersion": {
       "type": "string",
-      "defaultValue": "9.6",
+      "defaultValue": "10",
       "allowedValues": [
         "9.6",
         "10"

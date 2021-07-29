@@ -667,7 +667,7 @@
         "httpScheme": "[if(variables('isSSLSpecified'), 'https://', 'http://')]",
         "isCNameSpecified": "[not(empty(parameters('cname')))]",
         "dbTemplate": "[if(equals(parameters('dbType'),'sqlserver'), 'sqlDbTemplate', 'postgresDbTemplate')]",
-        "esLoadBalancerPrivateIp": "10.82.70.190"
+        "esLoadBalancerPrivateIp": "10.81.70.190"
     },
     "resources": [
         {

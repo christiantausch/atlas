@@ -49,15 +49,15 @@
         },
         "vnet": {
             "name": "[concat(variables('namespace'), 'vnet')]",
-            "prefix": "10.82.70.64/26"
+            "prefix": "10.81.70.64/26"
         },
         "gtwySubnet": {
             "name": "[concat(variables('namespace'), 'appgwsubnet')]",
-            "prefix": "10.82.70.64/28"
+            "prefix": "10.81.70.64/28"
         },
         "appSubnet": {
             "name": "[concat(variables('namespace'), 'cluster', 'subnet')]",
-            "prefix": "10.82.70.80/28",
+            "prefix": "10.81.70.80/28",
             "nsg": {
                 "name": "[concat(variables('namespace'), 'cluster', 'nsg')]"
             }
@@ -87,7 +87,7 @@
             },
             "subnet": {
                 "name": "[concat(variables('namespace'), 'jumpboxsubnet')]",
-                "prefix": "10.82.70.96/28"
+                "prefix": "10.81.70.96/28"
             },
             "nics": {
                 "public": "[concat(variables('namespace'), 'jumpbox', 'nic', 'public')]"
